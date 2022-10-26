@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(props) {
   return (
-    <header id="headerType" className={`header__wrap ${props.fonts}`}>
+    <header id="headerType" classNamenpm={`header__wrap ${props.fonts}`}>
       <div className="header__inner">
         <div className="header__logo">
           <a href="/">
