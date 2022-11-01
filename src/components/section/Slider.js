@@ -5,6 +5,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const sliderText = {
+  span: "PLANT",
+  title: "반려식물 키우기",
+  desc: "반려식물 혼자 키우기 힘드시죠? \n우리가 당신과 함께하겠습니다.",
+  aLink: "/",
+  aClass: "black",
+  aDet: "자세히 보기",
+  aSite: "사이트 보기",
+};
+
 function Slider(props) {
   return (
     <section id="sliderType" className={`slider__wrap ${props.fonts}`}>
@@ -21,48 +31,48 @@ function Slider(props) {
         >
           <SwiperSlide>
             <div className="desc">
-              <span>PLANT</span>
-              <h3>반려식물 키우기</h3>
-              <p>
-                반려식물 혼자 키우기 힘드시죠? <br />
-                우리가 당신과 함께하겠습니다.
-              </p>
+              <span>{sliderText.span}</span>
+              <h3>{sliderText.title}</h3>
+              <p>{sliderText.desc}</p>
               <div className="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" className="black">
-                  사이트 보기
+                <a href={`${sliderText.aLink}`}>{sliderText.aDet}</a>
+                <a
+                  href={`${sliderText.aLink}`}
+                  className={`${sliderText.aClass}`}
+                >
+                  {sliderText.aSite}
                 </a>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="desc">
-              <span>PLANT</span>
-              <h3>반려식물 키우기</h3>
-              <p>
-                반려식물 혼자 키우기 힘드시죠? <br />
-                우리가 당신과 함께하겠습니다.
-              </p>
+              <span>{sliderText.span}</span>
+              <h3>{sliderText.title}</h3>
+              <p>{sliderText.desc}</p>
               <div className="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" className="black">
-                  사이트 보기
+                <a href={`${sliderText.aLink}`}>{sliderText.aDet}</a>
+                <a
+                  href={`${sliderText.aLink}`}
+                  className={`${sliderText.aClass}`}
+                >
+                  {sliderText.aSite}
                 </a>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="desc">
-              <span>PLANT</span>
-              <h3>반려식물 키우기</h3>
-              <p>
-                반려식물 혼자 키우기 힘드시죠? <br />
-                우리가 당신과 함께하겠습니다.
-              </p>
+              <span>{sliderText.span}</span>
+              <h3>{sliderText.title}</h3>
+              <p>{sliderText.desc}</p>
               <div className="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" className="black">
-                  사이트 보기
+                <a href={`${sliderText.aLink}`}>{sliderText.aDet}</a>
+                <a
+                  href={`${sliderText.aLink}`}
+                  className={`${sliderText.aClass}`}
+                >
+                  {sliderText.aSite}
                 </a>
               </div>
             </div>
